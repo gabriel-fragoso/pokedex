@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+
+  .card-container {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .display{
+      margin: 0px 50px;
+      font-size: 2rem;
+      font-weight: 800;
+      color: rgb(142, 142, 142);
+    }
+
+    button {
+      border: none;
+      background-color: rgb(206, 206, 206);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      transition: 0.5s;
+
+      img {
+        width: 25px;
+        opacity: 0.5;
+        margin-left: 4px;
+      }
+
+      &:nth-child(1){
+        transform: rotate(180deg);
+      }
+
+      &:hover{
+        cursor: pointer;
+        filter: brightness(0.8);
+      }
+    }
+  }
+}
